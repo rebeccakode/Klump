@@ -4,7 +4,7 @@
           <h2 class="text-darkblue text-4xl font-semibold mb-6">Available for you in</h2>
         </div>  
 
-       <div class="grid grid-cols-4 gap-4 mx-8 mt-8 py-4">
+       <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4 mx-8 mt-8 py-4">
           <div v-for="product in productAvaliblity" :key="product"> 
                 <div>
                     <img :src="product.image" />

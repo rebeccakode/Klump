@@ -1,8 +1,8 @@
 <template>
-     <section class="mt-8 py-6">
+     <section class="lg:mt-8 lg:py-6">
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
-            <div class="lg:p-6.25rem p-8 leading-one-height text-body">
-                <h2 class="leading-one-height lg:text-26rem text-4xl font-bold my-6 subtitle"> Moving and living abroad just got simpler<span class="text-primary font-bold rounded-full">.</span> </h2>
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
+                <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Moving and living abroad just got simpler<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Receive your salary, pension, and more.</h3>
                 <p class="text-justify my-3 text-base leading-7"> Relocate without the stress — and without the multiple bank accounts. Share your details with your
                   employer, pension scheme, family or friends, and get paid like a local. 
@@ -24,7 +24,7 @@
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
               <div class="use-case-bg2 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
-            <div class="lg:p-6.25rem p-8 leading-one-height text-body">
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Shopping through overseas online stores<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Pay at the real exchange rate.</h3>
                 <p class="text-justify my-3 text-base leading-7"> Avoid sneaky bank exchange rate markups and high foreign transaction fees. 
@@ -45,7 +45,7 @@
         </div>
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
-            <div class="lg:p-6.25rem p-8 leading-one-height text-body">
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2  class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Receive money from around the world<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Get paid like a local.</h3>
                 <p class="text-justify my-3 text-base leading-7"> UK account number, Euro IBAN, US routing number, and more. All in one account. Receive your salary, 
@@ -69,7 +69,7 @@
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
              <div class="use-case-bg4 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
-            <div class="lg:p-6.25rem p-8 leading-one-height text-body">
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Take the stress out of managing property<span class="text-primary font-bold rounded-full">.</span></h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Save when you buy property abroad.</h3>
                 <p class="text-justify my-3 text-base leading-7"> Sending and managing money with Wise is on average 6x cheaper than UK banks. 
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="text-center"> 
-                        <h3 class="text-17rem font-extrabold text-center font-normal mb-4 pb-3"> Top up your account </h3>
+                        <h3 class="text-17rem font-extrabold text-center font-normal my-4 py-3"> Top up your account </h3>
                         <p class="text-base tracking-wide px-6"> You can add money using your bank account, Apple Pay, credit/debit card. </p>
                     </div>
 
@@ -127,7 +127,7 @@
                     </div>
             </div>
             
-            <div class="lg:py-8 py-4">
+            <div class="py-8 mb-8">
                 <a class="w-full border-white font-bold rounded border hover:bg-primary p-4" href="/register/?country=NG" target="_self">Get an account in minutes</a>
             </div>
             
