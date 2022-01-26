@@ -22,6 +22,10 @@ module.exports = {
           'h3'   : '1.375rem',
         },
 
+        padding: {
+          '6.25rem': '6.25rem',
+        },
+
         lineHeight: {
           'one-height': '1.14285714',
            'md-height': '1.36363636',
