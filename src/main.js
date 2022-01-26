@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import App from './pages/App.vue'
 import './assets/css/tailwind.css'
+import 'tw-elements'
 
 Vue.config.productionTip = false
 

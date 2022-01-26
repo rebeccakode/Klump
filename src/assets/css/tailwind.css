@@ -11,4 +11,49 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .subtitle {
+        @apply text-17rem lg:text-26rem;
+        color: #37517e;
+      }
+
+    .usercase-bg{
+        background: linear-gradient(252.32deg,#485dc7 0%,#37517e 100%),linear-gradient(0deg,#475cc7,#475cc7);
+    }
+    .circle{
+        position: relative;
+        width: 58px;
+        height: 58px;
+    }
+    .faq-section {
+        background-color: #f2f5f7;
+      }
+      .colored-dot:after {
+        content: ".";
+        color: #00b9ff;
+      }
+      .send-money-to-countries-section {
+        background: white;
+      }
+      .hold-and-convert-money {
+        background: white;
+      }
+      .dark-blue-title {
+        @apply text-17rem lg:text-26rem font-extrabold;
+        color: #37517e;
+      }
+      .black-subtitle-text {
+        color: #5d7079;
+        letter-spacing: .016em;
+        @apply lg:max-w-3xl font-medium mx-auto;
+      }
+      .section-title {
+        color: #5d7079;
+        @apply text-center font-semibold mb-2;
+      }
+
+     /* opacity: .6; */ 
+    /* -webkit-transform: translate(50%,50%) scale(1); */
+    /* transform: translate(50%,50%) scale(1); */
 }
+
