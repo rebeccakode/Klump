@@ -8,7 +8,7 @@
               </h2>
              <span class="flex items-center my-16">
               <button class="flex h-24 w-24">
-                <span class="animate-ping absolute inline-flex h-24 w-24 rounded-full bg-primary opacity-75 scale-1 transform translate-0  duration-0 ease-in-out"></span>
+                <span class="animate-ping absolute inline-flex h-24 w-24 rounded-full bg-primary opacity-75 transition duration-700 ease-in-out"></span>
                 <svg viewBox="0 0 109 109" class="text-primary relative w-24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="54.5" cy="54.5" r="53" fill="currentColor">
                     </circle><path d="M72 54.6162L45.5758 69.8722L45.5758 39.3601L72 54.6162Z" fill="white"></path>

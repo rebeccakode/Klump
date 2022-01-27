@@ -1,31 +1,18 @@
 <template>
-  <transition name="dropdown-content">
-    <div v-if="active" class="origin-top-right absolute right-0 mt-2 w-48 bg-white rounded-lg border py-2" >
-     <slot/>
+    <div>
+     
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Card title</h5>
+        <p class="text-gray-700 text-base mb-4">
+          Some quick example text to build on the card title and make up the bulk of the card's
+          content.
+        </p>
     </div>
-  </transition>
+ 
 </template>
 
 <script>
 export default {
   name: "MenuDropdownContent",
-  inject: ["sharedState"],
-  computed: {
-    active() {
-      return this.sharedState.active;
-    }
-  }
 };
 </script>
 
-<style>
-.dropdown-content-enter-active,
-.dropdown-content-leave-active {
-  transition: all 0.2s;
-}
-.dropdown-content-enter,
-.dropdown-content-leave-to {
-  opacity: 0;
-  transform: translateY(-5px);
-}
-</style>
