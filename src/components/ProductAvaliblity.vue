@@ -4,8 +4,21 @@
           <h2 class="text-darkblue text-4xl font-semibold mb-6">Available for you in</h2>
           
           <div class="">
-            <!-- <CountryList/> -->
-          </div>
+             <li @mouseover="list = true" @mouseleave="list = false" class="relative block left-0 p-0">
+            <button class="relative flex items-center border w-2/4 focus:outline-none  hover:text-primary text-white font-semibold" >
+                    Nigeria
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
+                  d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+            </button>
+          <transition name="fade">
+            <ul v-if="transfer" @click="list = false" class="absolute right-0 bg-white rounded shadow-lg top-12 m-0  z-50">
+            <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
+              <li>
+                  <CountryList/>
+              </li>
+            </ul>
+       </transition>
+    </li>
         </div>  
 
 
@@ -30,13 +43,13 @@
 </template>
 
 <script>
-// import CountryList from './CountryList.vue'
+import CountryList from './CountryList.vue'
 export default {
-  // components: { CountryList },
+  components: { CountryList },
    name:'ProductAvaliblity',
    data() {
        return {
-         selected: null,
+         list: false,
            productAvaliblity: 
              [
                {

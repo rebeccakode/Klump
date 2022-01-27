@@ -59,7 +59,6 @@ export default {
   data() {
    return {
       alertOpen: true,
-      listOne: false,
     }
   },
   methods: {

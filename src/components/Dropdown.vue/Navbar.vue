@@ -1,15 +1,15 @@
 <template>
   <div>
-  <ul class="flex m-0">
-    <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block  w-full">
+  <ul class="flex m-0 menu-item">
+    <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block left-0 p-0">
       <a href="#" class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
                Money transfer
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
             d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
       </a>
       <transition name="fade">
-        <ul v-if="transfer" @click="transfer = false" class="absolute left-0 bg-white rounded shadow-lg top-12 m-0 p-4 z-10 w-full">
-        <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
+        <ul v-if="transfer" @click="transfer = false" class="absolute right-0 bg-white rounded shadow-lg top-12 m-0  z-50">
+         <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
           <li>
            <a href="#">
                <MenuDropdownContent/>
@@ -26,19 +26,24 @@
                   d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
       </a>
         <transition name="fade">
-            <ul v-if="account" @click="account = false" class="absolute left-0 bg-white rounded shadow-lg top-12 m-0 p-4 z-10 w-full">
+            <ul v-if="account" @click="account = false" class="absolute right-0 bg-white rounded shadow-lg top-12 m-0  z-50">
             <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
             <li>
             <a href="#">
-                content here
+                <MenuDropdownCard/>
             </a>
             </li>
             </ul>
         </transition>
     </li>
-     
-      <li class="px-3 mt-2"><router-link to="/help" class="text-sm font-semibold  p-2 hover:text-primary text-white" > Help </router-link> </li>
 
+     <div>
+      <li class="px-3 mt-2">
+        <a to="/help" class="text-sm font-semibold  p-2 hover:text-primary text-white" > 
+      Help </a> 
+      </li>
+     </div>  
+   
     <li @mouseover="en = true" @mouseleave="en = false" class="relative block ">
       <a href="#" class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
 
@@ -50,22 +55,30 @@
             d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
       </a>
       <transition name="fade">
-        <ul v-if="en" @click="en = false" class="absolute left-0 bg-white rounded shadow-lg top-12 m-0 p-4 z-10 w-full">
+        <ul v-if="en" @click="en = false" class="absolute right-0 bg-white rounded shadow-lg top-12 min-w-sm m-0 z-50">
         <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
           <li>
            <a href="#">
-               cotntentsf
+             <DropdownLangTitle/>
           </a>
           </li>
         </ul>
        </transition>
+       
     </li>
 
-      <li class="px-3 mt-2"><router-link to="/register" class="
-            text-sm font-semibold  p-2 hover:text-primary text-white" > Login </router-link> </li> 
+     
+     
+      <li class="px-3 mt-2">
+        <a href="/register" class="text-sm font-semibold  p-2 hover:text-primary text-white" > 
+         Login 
+          </a>
+      </li> 
 
-        <li class="px-3 mt-2"><router-link to="/register" class="border p-3 rounded hover:bg-primary 
-        hover:text-white text-sm font-semibold border-primary p-2 text-primary" > Register </router-link>
+        <li class="px-3 mt-2"><a href="/register" class="border p-3 rounded hover:bg-primary 
+        hover:text-white text-sm font-semibold border-primary p-2 text-primary" > 
+        Register 
+        </a>
         </li>
      
   </ul>
@@ -73,9 +86,11 @@
 </template>
 
 <script>
+import DropdownLangTitle from './DropdownLangTitle.vue'
+import MenuDropdownCard from './MenuDropdownCard.vue'
 import MenuDropdownContent from './MenuDropdownContent.vue'
 export default {
-  components: { MenuDropdownContent },
+  components: { MenuDropdownContent, MenuDropdownCard, DropdownLangTitle },
     name: 'Navbar',
     data () {
         return {
@@ -89,7 +104,7 @@ export default {
 
 <style scoped>
 
-li ul li {
+.menu-item li ul li {
   transition: background .2s;
 }
 
@@ -98,5 +113,9 @@ li ul li {
 }
 .fade-enter, .fade-leave-active {
   opacity: 0;
+}
+
+.menu-item > li ul{ 
+  width: 450px;
 }
 </style>

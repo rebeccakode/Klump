@@ -2,17 +2,22 @@
     <form class="w-full"> 
        
         <div class="flex items-center">
-            <div class="w-2/8">
-                <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
-                <input value="1000" class=" w-full rounded-l relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
+             <div class="w-2/8">
+                <label class="block mb-1 absolute ml-2 z-10 text-gray-600 mt-3 text-sm px-3" for="formGridCode_name">You send</label>
+                <input value="1000" class=" w-full rounded-l text-gray-700 relative p-6 mt-2.5 text-xl hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
            
-            <div class="w-1/3">
-                <!-- <CountryList/> -->
-                <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
-                <option>
-                    <CountryFlag country='ng' size='normal'/>NGN</option>
-                </select>
+            <div class="w-1/3 mt-1">
+            <li @mouseover="flag = true" @mouseleave="flag = false" class="relative block left-0 p-0">
+            <a class="relative w-full mt-1.5 p-6 flex items-center focus:outline-none bg-darkblue  hover:text-primary font-semibold" >
+                  <CountryFlag country='ng' size="normal" class="-mt-1 w-32"/>
+                  <span class="pl-4 mt-1 font-bold text-white"> EUR </span>
+                    <span class="">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current text-primary"><path
+                      d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+                   </span>
+            </a>
+            </li>
            </div>
         </div>
 
@@ -55,18 +60,23 @@
             </div>
         </div> 
             
-        <div class="flex items-center">
+         <div class="flex items-center">
             <div class="w-2/8">
-                <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
-                <input value="1000" class=" w-full rounded-l relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
+                <label class="block mb-1 absolute ml-2 z-10 text-gray-600 mt-3 text-sm px-3" for="formGridCode_name">You send</label>
+                <input value="1000" class=" w-full rounded-l text-gray-700 relative p-6 mt-2.5 text-xl hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
-
-            <div class="w-1/3">
-                <!-- <CountryList/> -->
-                <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
-                <option>
-                    <CountryFlag country='ng' size='normal'/>NGN</option>
-                </select>
+           
+            <div class="w-1/3 mt-1">
+            <li @mouseover="flag = true" @mouseleave="flag = false" class="relative block left-0 p-0">
+            <a class="relative w-full mt-1.5 p-6 flex items-center focus:outline-none bg-darkblue  hover:text-primary font-semibold" >
+                  <CountryFlag country='ng' size="normal" class="-mt-1 w-32"/>
+                  <span class="pl-4 mt-1 font-bold text-white"> EUR </span>
+                    <span class="">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current text-primary"><path
+                      d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+                   </span>
+            </a>
+            </li>
            </div>
         </div>
        
@@ -82,7 +92,7 @@
             </div>
         </div>
 
-        <div class="text-center items-center w-full mx-auto lg:px-8 lg:-ml-8">
+        <div class="text-center items-center w-100 pr-4">
             <a class="bg-btnsucess p-3.5 wf-ull rounded-sm  border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>
@@ -97,5 +107,11 @@ export default {
     
   components: { CountryFlag },
     name: 'RateExchangeForm',
+
+    data(){
+        return {
+            flag:false,
+        }
+    }
 }
 </script>
