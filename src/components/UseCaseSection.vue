@@ -171,35 +171,32 @@ export default {
     background-image: url('../assets/images/abroad_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/abroad_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
-    height: 320px;
+  
     }
 
     .use-case-bg2{
     background-image: url('../assets/images/shopping.jpg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/shopping.jpg'),linear-gradient(#f2f5f7,#f2f5f7);
-    height: 320px;
+    
     }
 
     .use-case-bg3{
     background-image: url('../assets/images/receive_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/receive_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
-    height: 320px;
     }
 
     .use-case-bg4{
     background-image: url('../assets/images/property_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/property_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
-    height:320px;
     }
 
     .use-case-bg5{
     background-image: url('../assets/images/customer_support.jpg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/customer_support.jpg'),linear-gradient(#f2f5f7,#f2f5f7);
-    height: 320px
     }
    
 </style>
