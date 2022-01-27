@@ -1,10 +1,17 @@
 <template>
     <div class="container">
         <div class="flex flex-wrap items-center justify-center">
-          <h2 class="text-darkblue text-4xl font-semibold mb-6">Available for you in</h2>
+          <h2 class="text-darkbluetitle text-4xl font-semibold mb-6">Available for you in</h2>
           
-          <div class="">
-            <!-- <CountryList/> -->
+          <div class="w-48 p-4">
+           <button class="bg-gray-100 w-48 p-4 flex text-3xl font-bold justify-between hover:border-primary dropdown-toggle" type="button" aria-expanded="false">
+             <span class="text-darkbluetitle">Nigeria</span>
+             <span class="mt-2 text-primary font-bold" aria-hidden="true" role="presentation">
+               <svg width="17" height="17" fill="currentColor"  focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 4l-6.6 6.653L2.537 11.8 8 6.293l5.463 5.507 1.137-1.147L8 4z">
+                 </path></svg>
+                 
+                 </span>
+                 </button>
           </div>
         </div>  
 
@@ -19,7 +26,6 @@
                     <p class="my-4 text-body text-base"> {{product.description}}</p>
                     <a target="_blank" rel="" class="inline-flex text-primary font-bold" href="https://www.trustpilot.com/review/wise.com"> 
                      {{product.link}}
-                     <img :src="product.arrowIcon"  class="w-4 ml-2"/>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /> -->
                    </svg>

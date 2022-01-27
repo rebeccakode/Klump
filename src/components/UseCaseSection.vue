@@ -1,5 +1,5 @@
 <template>
-     <section class="lg:mt-8 lg:py-6">
+     <section class="lg:mt-8 lg:pt-6">
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
             <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Moving and living abroad just got simpler<span class="text-primary font-bold rounded-full">.</span> </h2>

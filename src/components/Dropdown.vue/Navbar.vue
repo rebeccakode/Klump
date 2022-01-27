@@ -1,6 +1,6 @@
 <template>
   <div>
-  <ul class="flex m-0 menu-item">
+  <ul class="flex flex-wrap m-0 menu-item">
     <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block left-0 p-0">
       <a  class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
                Money transfer

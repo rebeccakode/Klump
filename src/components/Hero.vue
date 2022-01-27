@@ -6,18 +6,21 @@
               <h2 class="text-white leading-relaxed text-4xl font-bold py-3">
                 The cheap, fast way to send money abroad.
               </h2>
+
+        
              <span class="flex items-center my-16">
               <button class="flex h-24 w-24">
-                <span class="animate-ping absolute inline-flex h-24 w-24 rounded-full bg-primary opacity-75 transition duration-700 ease-in-out"></span>
+                <span class="animate-ping absolute flex h-24 w-24 rounded-full bg-primary opacity-75 transition duration-700 ease-in-out"></span>
                 <svg viewBox="0 0 109 109" class="text-primary relative w-24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="54.5" cy="54.5" r="53" fill="currentColor">
                     </circle><path d="M72 54.6162L45.5758 69.8722L45.5758 39.3601L72 54.6162Z" fill="white"></path>
                 </svg>
              </button>
               <p class="text-primary text-lg font-semibold pl-6"> See how it works</p>
-             </span>
-            <div class="lg:pt-16 lg:py-8 lg:flex  block justify-start space-x-8">
-            
+             </span> -->
+
+
+            <div class="lg:pt-12 py-8 lg:flex  block justify-start space-x-8">
             <span>
               <p class="text-white text-lg font-bold"> Over 11 million customers </p>
               <a target="_blank" rel="" class="inline-flex text-primary font-bold" href="https://www.trustpilot.com/review/wise.com">

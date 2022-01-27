@@ -11,7 +11,9 @@
       <div>
         <UseCaseSection/>
       </div>
+       <Security/>
        <Coverage/>
+       
       <ConvertMoney/>        
       <SendMoney/>
       <section class="faq-section">
@@ -31,6 +33,8 @@ import FAQs from '../components/FAQs.vue'
 import Footer from '../layouts/partials/Footer.vue'
 import Header from '../layouts/partials/Header.vue'
 import SendMoney from '../components/SendMoney.vue'
+import Security from '../components/Security.vue'
+
 import ConvertMoney from '../components/ConvertMoney.vue'
 import Coverage from '../components/Coverage.vue'
 
@@ -45,6 +49,7 @@ export default {
     UseCaseSection,
     SendMoney,
     ConvertMoney,
+    Security,
     Coverage,
   },
 

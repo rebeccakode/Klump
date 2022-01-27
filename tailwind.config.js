@@ -1,12 +1,19 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  //  content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
-   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', './node_modules/tw-elements/dist/js/**/*.js' ],
+   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}' ],
   darkMode: false, // or 'media' or 'class'
   theme: {
       extend: {
+        fontFamily: {
+          sans: ['Averta', 'Avenir W02', 'Avenir', ...defaultTheme.fontFamily.sans],
+          serif: ['Averta', ...defaultTheme.fontFamily.serif],
+        },
+        
         colors: {
             primary: '#00b9ff',
-            secondary: '#CD4626',
+            secondary: '#5d7079',
+            accent: '#00b9ff',
+            neutral: '#f2f5f7',
             tertiary: '#FAD6A0',
             darkblue: '#253655',
             darkbluetitle: '#37517e',
@@ -29,7 +36,15 @@ module.exports = {
         lineHeight: {
           'one-height': '1.14285714',
            'md-height': '1.36363636',
-        }
+        },
+        animation: {
+          'spin-slow': 'pulsing-ring 1800ms cubic-bezier(.2,.6,.35,1) infinite',
+        },
+        keyframes: {
+          'pulsing-ring': {
+            '100%': { transform: 'translate(50%,50%) scale(1.5)', opacity:0 },
+          }
+        },
         
 
     },
