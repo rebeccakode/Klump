@@ -39,7 +39,7 @@
           </div>
           </div>
 
-           <div class="relative col-span-2">
+           <div class="relative col-span-2 w-11/12 mx-16">
                 <RateExchangeForm/>
           </div>
        </section>

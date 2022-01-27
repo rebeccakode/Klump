@@ -9,7 +9,7 @@
 
             <div class="w-1/3">
                 <!-- <CountryList/> -->
-                <select class="w-full p-8 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
+                <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
                 <option>GBP</option>
                 <option>1 </option>
                 <option>1 </option>
@@ -17,7 +17,7 @@
            </div>
         </div>
 
-        <div class="flex flex-col mx-24  mt-8">
+        <div class="flex flex-col my-6">
             <span class="inline-flex">
                 <span class="bg-darkblue rounded-full text-white w-6 h-6 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,22 +56,23 @@
             </div>
         </div> 
             
-        <div class="flex flex-wrap space-y-4 md:space-y-0 items-center justify-center ml-8">
-            <div class="bg-white p-2 w-full lg:w-1/2 rounded-tl">
-                <label class="block mb-1 absolute z-10 px-4 text-gray-600" for="formGridCode_name">Recipient will get exactly</label>
-                <input value="519,282.40" class="relative py-3 px-4 mt-2 text-lg font-bold focus:outline-none" type="text" id="formGridCode_name"/>
+        <div class="flex items-center">
+            <div class="w-2/3">
+                <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
+                <input value="1000" class=" w-full relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
 
-            <div class="bg-darkblue lg:w-1/4 w-full p-2 rounded-r font-bold text-lg">
-                <select class="relative py-3 lg:w-1/4 px-6 mt-2  left-10  focus:outline-none">
+            <div class="w-1/3">
+                <!-- <CountryList/> -->
+                <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
                 <option>GBP</option>
                 <option>1 </option>
                 <option>1 </option>
                 </select>
-            </div>
+           </div>
         </div>
        
-        <div class="flex flex-wrap space-y-4 md:space-y-0 text-white mx-24 my-8">
+        <div class="flex flex-wrap space-y-4 md:space-y-0 text-white  my-8">
             <div class="text-center text-lg border-r-2 border-darkblue px-6"> 
                 <p>You could save vs banks </p>
                 <strong> 43.95 GBP </strong>
@@ -83,7 +84,7 @@
             </div>
         </div>
 
-        <div class="w-3/4 pl-2 text-center items-center mx-auto">
+        <div class="w-3/4 pl-2 text-center items-center">
             <a class="bg-btnsucess py-3  rounded-sm ml-2 border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>
