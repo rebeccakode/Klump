@@ -1,7 +1,7 @@
 <template>
   <div>
   <ul class="flex m-0">
-    <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block float-left">
+    <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block  w-full">
       <a href="#" class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
                Money transfer
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
@@ -19,7 +19,7 @@
        </transition>
     </li>
 
-    <li @mouseover="account = true" @mouseleave="account = false" class="relative block float-left">
+    <li @mouseover="account = true" @mouseleave="account = false" class="relative block ">
       <a href="#" class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
                Multi-currency-account
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
@@ -39,7 +39,7 @@
      
       <li class="px-3 mt-2"><router-link to="/help" class="text-sm font-semibold  p-2 hover:text-primary text-white" > Help </router-link> </li>
 
-    <li @mouseover="en = true" @mouseleave="en = false" class="relative block float-left">
+    <li @mouseover="en = true" @mouseleave="en = false" class="relative block ">
       <a href="#" class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
 
          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
