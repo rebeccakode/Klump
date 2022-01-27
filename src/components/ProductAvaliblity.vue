@@ -19,9 +19,10 @@
                     <p class="my-4 text-body text-base"> {{product.description}}</p>
                     <a target="_blank" rel="" class="inline-flex text-primary font-bold" href="https://www.trustpilot.com/review/wise.com"> 
                      {{product.link}}
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
+                     <img :src="product.arrowIcon"  class="w-4"/>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /> -->
+                    <!-- </svg> -->
                     </a>
                 </div>
            </div>
@@ -44,7 +45,7 @@ export default {
                 title: 'Send money cheaper and easier than old-school banks.',
                 description: 'Send money at the real exchange rate with no hidden fees.',
                 link: 'Send money',
-                arrowIcon: ''
+                arrowIcon: '/images/right-arrow-svgrepo-com.svg'
                 
               },
 
