@@ -2,17 +2,16 @@
     <form class="w-full"> 
        
         <div class="flex items-center">
-            <div class="w-2/3">
+            <div class="w-2/8">
                 <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
-                <input value="1000" class=" w-full relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
+                <input value="1000" class=" w-full rounded-l relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
-
+           
             <div class="w-1/3">
                 <!-- <CountryList/> -->
                 <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
-                <option>GBP</option>
-                <option>1 </option>
-                <option>1 </option>
+                <option>
+                    <CountryFlag country='ng' size='normal'/>NGN</option>
                 </select>
            </div>
         </div>
@@ -57,17 +56,16 @@
         </div> 
             
         <div class="flex items-center">
-            <div class="w-2/3">
+            <div class="w-2/8">
                 <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
-                <input value="1000" class=" w-full relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
+                <input value="1000" class=" w-full rounded-l relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
 
             <div class="w-1/3">
                 <!-- <CountryList/> -->
                 <select class="w-full p-7 mt-1.5 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
-                <option>GBP</option>
-                <option>1 </option>
-                <option>1 </option>
+                <option>
+                    <CountryFlag country='ng' size='normal'/>NGN</option>
                 </select>
            </div>
         </div>
@@ -84,8 +82,8 @@
             </div>
         </div>
 
-        <div class="w-full pl-2 text-center items-center mx-auto">
-            <a class="bg-btnsucess py-4  rounded-sm ml-2 border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
+        <div class="text-center items-center w-full mx-auto px-8 -ml-8">
+            <a class="bg-btnsucess p-3.5 wf-ull rounded-sm  border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>
     </form> 
@@ -93,9 +91,11 @@
 
 <script>
 // import CountryList from './CountryList.vue'
+import CountryFlag from 'vue-country-flag';
 
 export default {
-//   components: { CountryList },
+    
+  components: { CountryFlag },
     name: 'RateExchangeForm',
 }
 </script>

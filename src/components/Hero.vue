@@ -1,7 +1,7 @@
 <template>
   <div>
      <div class="container lg:mx-16 mx-0 py-8 lg:px-8 px-4">
-         <section class="grid grid-cols-4 gap-4 mx-8">
+         <section class="grid lg:grid-cols-4 grid-cols-2 gap-4 mx-8">
           <div class="col-span-2">
               <h2 class="text-white leading-relaxed text-4xl font-bold py-3">
                 The cheap, fast way to send money abroad.

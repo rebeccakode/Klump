@@ -45,11 +45,25 @@
 
         </div>
       <ul class="flex space-x-2">
-          <li>1 </li>
-          <li>2 </li>
-          <li>3 </li>
-            <li>4 </li>
-            <li class="px-3"><router-link to="/register" class="border rounded hover:bg-primary hover:text-white text-sm font-semibold border-primary p-2 text-primary" > Register </router-link> </li>
+           <MenuDropdown>
+            <template slot="toggler">
+              <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 rounded-lg bg-gray-300 text-gray-800 font-semibold" >
+                Click me
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"class="ml-1 h-5 w-5 fill-current text-gray-700"><path
+                  d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+              </button>
+            </template>
+
+            <MenuDropdownContent>
+              <MenuDropdownItem>Action 1</MenuDropdownItem>
+              <MenuDropdownItem>Action 2</MenuDropdownItem>
+              <MenuDropdownItem>Action 3</MenuDropdownItem>
+            </MenuDropdownContent>
+            
+          </MenuDropdown> 
+
+          
+            <li class="px-3"><router-link to="/register" class="border p-3 rounded hover:bg-primary hover:text-white text-sm font-semibold border-primary p-2 text-primary" > Register </router-link> </li>
       </ul>
   
     </nav>
@@ -58,10 +72,14 @@
 </template>
 
 <script>
+import MenuDropdown from '../../components/Dropdown.vue/MenuDropdown.vue';
+import MenuDropdownContent from '../../components/Dropdown.vue/MenuDropdownContent.vue';
+import MenuDropdownItem from '../../components/Dropdown.vue/MenuDropdownItem.vue';
 export default {
+  components: { MenuDropdownContent, MenuDropdownItem,MenuDropdown },
   name: 'Header',
   data() {
-    return {
+   return {
       alertOpen: true
     }
   },

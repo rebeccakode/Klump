@@ -11,7 +11,7 @@
 
        <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4 mx-8 mt-8 py-4">
           <div v-for="product in productAvaliblity" :key="product"> 
-                <div>
+                <div class="flex flex-col justify-between">
                     <img :src="product.image" />
                 </div>
                 <div class="flex flex-col text-center items-center px-3 justify-center">
@@ -40,7 +40,7 @@ export default {
            productAvaliblity: 
              [
                {
-                imageS: '/images/mobil1.jpg',
+                image: '/images/mobil1.jpg',
                 title: 'Send money cheaper and easier than old-school banks.',
                 description: 'Send money at the real exchange rate with no hidden fees.',
                 link: 'Send money',
