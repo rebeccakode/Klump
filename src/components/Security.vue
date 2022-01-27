@@ -1,6 +1,6 @@
 <template>
   <div class="bg-neutral md:py-16 py-8">
-    <div class="container lg:px-32">
+    <div class="container lg:px-32 mx-8">
       <div class="text-center">
         <b class="font-semibold tracking-normal text-secondary">Security</b>
         <h2 class="text-darkbluetitle lg:text-26rem font-bold block-title">Protecting you and your money</h2>
