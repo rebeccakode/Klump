@@ -23,15 +23,15 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
                 </svg>
                 </span>
-                <p class="inline-flex text-white pl-4 font-bold">5.53 GBP </p>
-                 <div class="w-1/2 ml-8">
-                    <select class="focus:outline-none bg-darkblue text-white font-normal w-full p-1">
+                <p class="inline-flex text-white text-base font-bold pl-4">5.53 GBP </p>
+                 <div class="w-1/2 ml-8 text-base">
+                    <select class="focus:outline-none bg-darkblue text-white -mt-2 font-normal w-full p-2">
                     <option>Cose lower transfer</option>
                     <option>1 </option>
                     <option>1 </option>
                     </select>
                 </div> 
-                <p class="inline-flex text-ashgray pl-4 font-bold">fee</p>     
+                <p class="inline-flex text-ashgray pl-4">fee</p>     
             </span>
 
             <span class="inline-flex py-3 text-ashgray">
@@ -40,8 +40,8 @@
                 <path fill-rule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
             </span>
-                <span class="px-4 lg:text-lg text-base font-semibold">993.58 GBP</span>  
-                <span class="font-semibold"> Amount we’ll convert</span>
+                <span class="px-4 text-base text-base">993.58 GBP</span>  
+                <span class=""> Amount we’ll convert</span>
             </span>
 
             <div class="flex flex-wrap pt-4">
@@ -50,8 +50,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
             </span>
-                <span class="px-4 text-primary font-semibold lg:text-lg text-base">522.636</span>  
-                <span class="ml-6 text-ashgray hover:text-primary hover:opacity-50 font-semibold lg:text-lg text-base"> Guaranteed rate(2 hrs)</span>
+                <span class="px-4 text-primary hover:opacity-50 text-base">522.636</span>  
+                <span class="ml-6 text-ashgray hover:text-primary hover:opacity-50  text-base"> Guaranteed rate (2hrs)</span>
             </div>
         </div> 
             
@@ -71,12 +71,12 @@
         </div>
        
         <div class="flex flex-wrap space-y-4 md:space-y-0 text-white my-3">
-            <div class="text-center text-lg border-r-2 border-darkblue px-4"> 
+            <div class="text-center text-base border-r-2 border-darkblue px-4"> 
                 <p>You could save vs banks </p>
                 <strong> 43.95 GBP </strong>
             </div>
 
-            <div class="text-center text-lg pl-6"> 
+            <div class="text-center text-base pl-6"> 
                 <p>Should arrive
                 <br> <strong> 40 minutes </strong> </p>
             </div>

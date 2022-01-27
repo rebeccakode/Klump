@@ -1,8 +1,8 @@
 <template>
   <div>
-     <div class="container lg:mx-16 mx-0 py-8 lg:px-8 px-4">
-         <section class="grid lg:grid-cols-4 grid-cols-2 gap-4 mx-8">
-          <div class="col-span-2">
+     <div class="container lg:mx-12 mx-0 py-8 lg:px-12 px-4">
+         <section class="grid lg:grid-cols-4 grid-cols-2 gap-4">
+          <div class="col-span-2 lg:mx-0 mx-6">
               <h2 class="text-white leading-relaxed text-4xl font-bold py-3">
                 The cheap, fast way to send money abroad.
               </h2>
@@ -39,7 +39,7 @@
           </div>
           </div>
 
-           <div class="relative col-span-2 w-11/12 mx-16">
+           <div class="relative col-span-2 lg:mx-16 mx-6">
                 <RateExchangeForm/>
           </div>
        </section>

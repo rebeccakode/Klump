@@ -3,7 +3,7 @@
 
 <div>
    <section class="bg-darkblue" v-if="alertOpen">
-      <div class="container lg:mx-16 mx-0 py-4 lg:px-16 px-2 flex flex-wrap lg:justify-between justify-around">
+      <div class="container lg:mx-12 mx-0 py-4 lg:px-12 px-2 flex flex-wrap lg:justify-between justify-around">
         <div>
           <span class="text-yellow inline-flex">
               <svg width="16" height="16" fill="currentColor" focusable="false"><path d="M11.863 1.63a.52.52 0 01-.233.233l-1.342.671a.52.52 0 000 .932l1.342.67c.101.051.183.133.233.234l.671 1.342a.52.52 0 00.931 0l.672-1.342a.52.52 0 01.233-.233l1.342-.671a.52.52 0 000-.932l-1.342-.67a.52.52 0 01-.233-.234L13.466.288a.52.52 0 00-.931 0l-.672 1.342z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7.238 3.456a.825.825 0 00-1.476 0L3.993 6.993.456 8.762a.825.825 0 000 1.476l3.537 1.769 1.769 3.537a.825.825 0 001.476 0l1.769-3.537 3.537-1.769a.825.825 0 000-1.476L9.007 6.993 7.238 3.456zM5.347 7.978L6.5 5.67l1.153 2.307c.08.16.21.289.37.369L10.328 9.5l-2.307 1.153c-.16.08-.289.21-.369.37L6.5 13.328l-1.153-2.307a.825.825 0 00-.37-.369L2.672 9.5l2.307-1.153c.16-.08.289-.21.369-.37z"></path></svg>
@@ -22,7 +22,7 @@
       </div>
     </section>
 
- <div class="container lg:mx-16 mx-0 py-8 lg:px-16 px-4">
+ <div class="container lg:mx-12 mx-0 py-8 lg:px-12 px-4">
    <nav class="flex flex-wrap items-center justify-between container mx-auto w-full">
         <div class="flex flex-row flex-wrap">
           <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -47,9 +47,9 @@
       <ul class="flex space-x-2">
            <MenuDropdown>
             <template slot="toggler">
-              <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 rounded-lg bg-gray-300 text-gray-800 font-semibold" >
-                Click me
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"class="ml-1 h-5 w-5 fill-current text-gray-700"><path
+              <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 hover:text-primary text-white font-semibold" >
+                 Money transfer
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
                   d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
               </button>
             </template>
@@ -59,13 +59,51 @@
               <MenuDropdownItem>Action 2</MenuDropdownItem>
               <MenuDropdownItem>Action 3</MenuDropdownItem>
             </MenuDropdownContent>
-            
           </MenuDropdown> 
 
-          
-            <li class="px-3"><router-link to="/register" class="border p-3 rounded hover:bg-primary hover:text-white text-sm font-semibold border-primary p-2 text-primary" > Register </router-link> </li>
+          <MenuDropdown>
+            <template slot="toggler">
+              <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 hover:text-primary text-white font-semibold" >
+               Multi-currency-account
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
+                  d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+              </button>
+            </template>
+
+            <MenuDropdownContent>
+              <MenuDropdownItem>Action 1</MenuDropdownItem>
+              <MenuDropdownItem>Action 2</MenuDropdownItem>
+              <MenuDropdownItem>Action 3</MenuDropdownItem>
+            </MenuDropdownContent>
+          </MenuDropdown> 
+
+
+          <li class="px-3 mt-2"><router-link to="/register" class="
+            text-sm font-semibold  p-2 hover:text-primary text-white" > Help </router-link> </li>
+
+          <MenuDropdown>
+            <template slot="toggler">
+              <button class="relative flex items-center focus:outline-none pl-5 pr-3 py-2 hover:text-primary text-white font-semibold" >
+                EN
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
+                  d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+              </button>
+            </template>
+
+            <MenuDropdownContent>
+              <MenuDropdownItem>Action 1</MenuDropdownItem>
+              <MenuDropdownItem>Action 2</MenuDropdownItem>
+              <MenuDropdownItem>Action 3</MenuDropdownItem>
+            </MenuDropdownContent>
+          </MenuDropdown> 
+
+           <li class="px-3 mt-2"><router-link to="/register" class="
+            text-sm font-semibold  p-2 hover:text-primary text-white" > Login </router-link> </li>
+
+          <li class="px-3 mt-2"><router-link to="/register" class="border p-3 rounded hover:bg-primary hover:text-white text-sm font-semibold border-primary p-2 text-primary" > Register </router-link> </li>
       </ul>
-  
+      <span class="absolute top-0 left-0 w-3 h-3 bg-gray-200 border transform rotate-45 -mt-1 ml-6"></span>
+
     </nav>
  </div> 
  </div>
@@ -76,7 +114,10 @@ import MenuDropdown from '../../components/Dropdown.vue/MenuDropdown.vue';
 import MenuDropdownContent from '../../components/Dropdown.vue/MenuDropdownContent.vue';
 import MenuDropdownItem from '../../components/Dropdown.vue/MenuDropdownItem.vue';
 export default {
-  components: { MenuDropdownContent, MenuDropdownItem,MenuDropdown },
+  components: { 
+     MenuDropdownContent,
+     MenuDropdownItem,
+     MenuDropdown },
   name: 'Header',
   data() {
    return {

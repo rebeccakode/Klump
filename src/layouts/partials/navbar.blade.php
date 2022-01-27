@@ -20,7 +20,8 @@
 
                     <li class="block relative" x-data="{showChildren:false}" @click.away="showChildren=false">
                         <a href="#" class="flex font-inter font-normal text-gray-200 items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-kh-blue hover:text-white" @click.prevent="showChildren=!showChildren">
-                            <span class="mr-3 text-xl hover:text-white text-kh-blue"> <i class="mdi mdi-layers-outline"></i> </span>
+                            <span class="mr-3 text-xl hover:text-white text-kh-blue"> 
+                                <i class="mdi mdi-layers-outline"></i> </span>
                             <span>Contents</span>
                         </a>
                         <div class="bg-gray-800 shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">

@@ -17,6 +17,7 @@
     "tw-elements": "^1.0.0-alpha9",
     "vue": "^2.6.11",
     "vue-accordion": "^1.0.0",
+    "vue-clickaway": "^2.2.2",
     "vue-country-flag": "^2.3.2",
     "vue-country-select": "^0.2.2",
     "vue-router": "^3.5.3"
