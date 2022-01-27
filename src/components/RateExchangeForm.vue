@@ -45,7 +45,7 @@
                 <span class="font-semibold"> Amount we’ll convert</span>
             </span>
 
-            <div class="flex flex-wrap pt-4 pb-8">
+            <div class="flex flex-wrap pt-4">
                 <span class="bg-darkblue rounded-full text-white w-6 h-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -72,8 +72,8 @@
            </div>
         </div>
        
-        <div class="flex flex-wrap space-y-4 md:space-y-0 text-white  my-8">
-            <div class="text-center text-lg border-r-2 border-darkblue px-6"> 
+        <div class="flex flex-wrap space-y-4 md:space-y-0 text-white my-3">
+            <div class="text-center text-lg border-r-2 border-darkblue px-4"> 
                 <p>You could save vs banks </p>
                 <strong> 43.95 GBP </strong>
             </div>
@@ -84,8 +84,8 @@
             </div>
         </div>
 
-        <div class="w-3/4 pl-2 text-center items-center">
-            <a class="bg-btnsucess py-3  rounded-sm ml-2 border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
+        <div class="w-full pl-2 text-center items-center mx-auto">
+            <a class="bg-btnsucess py-4  rounded-sm ml-2 border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>
     </form> 
