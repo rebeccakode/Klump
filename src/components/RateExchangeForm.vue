@@ -10,8 +10,8 @@
             <div class="w-1/3 mt-1">
             <li @mouseover="flag = true" @mouseleave="flag = false" class="relative block left-0 p-0">
             <a class="relative w-full mt-1.5 p-6 flex items-center focus:outline-none bg-darkblue  hover:text-primary font-semibold" >
-                  <CountryFlag country='ng' size="normal" class="-mt-1 w-32"/>
-                  <span class="pl-4 mt-1 font-bold text-white"> EUR </span>
+                  <CountryFlag country='gb' size="normal" class="-mt-1 w-32"/>
+                  <span class="pl-4 mt-1 font-bold text-white"> GBP </span>
                     <span class="">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current text-primary"><path
                       d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
@@ -69,7 +69,7 @@
             <div class="w-1/3 mt-1">
             <li @mouseover="flag = true" @mouseleave="flag = false" class="relative block left-0 p-0">
             <a class="relative w-full mt-1.5 p-6 flex items-center focus:outline-none bg-darkblue  hover:text-primary font-semibold" >
-                  <CountryFlag country='ng' size="normal" class="-mt-1 w-32"/>
+                  <CountryFlag country='eu' size="normal" class="-mt-1 w-32"/>
                   <span class="pl-4 mt-1 font-bold text-white"> EUR </span>
                     <span class="">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current text-primary"><path

@@ -30,10 +30,10 @@
               <strong class="text-base text-darkblue leading-8" >Product features</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
@@ -44,10 +44,10 @@
               <strong class="text-base text-darkblue leading-8">Pricing</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
@@ -59,10 +59,10 @@
               <strong class="text-base text-darkblue" >Use cases</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
@@ -75,10 +75,10 @@
               <strong class="text-base text-darkblue leading-8">Getting started</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
@@ -90,10 +90,10 @@
               <strong class="text-base text-darkblue leading-8" >Protecting your money</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
@@ -105,10 +105,10 @@
               <strong class="text-base text-darkblue leading-8">Coverage</strong>
               <span class="inline-flex mt-1 ml-2 text-primary" aria-hidden="true"
                 role="presentation">
-                <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
+                <!-- <svg width="16"  height="16" fill="currentColor" focusable="false" class="text-primary">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L5.347 1.4 4.2 2.537 9.707 8 4.2 13.463 5.347 14.6 12 8z">
                   </path>
-                </svg>
+                </svg> -->
               </span>
             </span>
           </a>
