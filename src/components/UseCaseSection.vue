@@ -22,7 +22,7 @@
            <div class="use-case-bg1 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
         </div>
 
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
               <div class="use-case-bg2 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
             <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Shopping through overseas online stores<span class="text-primary font-bold rounded-full">.</span> </h2>
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
             <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2  class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Receive money from around the world<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Get paid like a local.</h3>
@@ -67,7 +67,7 @@
               <div class="use-case-bg3 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
         </div>
 
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4"> 
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
              <div class="use-case-bg4 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
             <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Take the stress out of managing property<span class="text-primary font-bold rounded-full">.</span></h2>

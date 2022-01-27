@@ -2,7 +2,12 @@
     <div class="container">
         <div class="flex flex-wrap items-center justify-center">
           <h2 class="text-darkblue text-4xl font-semibold mb-6">Available for you in</h2>
+          
+          <div class="">
+            <!-- <CountryList/> -->
+          </div>
         </div>  
+
 
        <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4 mx-8 mt-8 py-4">
           <div v-for="product in productAvaliblity" :key="product"> 
@@ -25,14 +30,17 @@
 </template>
 
 <script>
+// import CountryList from './CountryList.vue'
 export default {
+  // components: { CountryList },
    name:'ProductAvaliblity',
    data() {
        return {
+         selected: null,
            productAvaliblity: 
              [
                {
-                image: '/images/mobil1.jpg',
+                imageS: '/images/mobil1.jpg',
                 title: 'Send money cheaper and easier than old-school banks.',
                 description: 'Send money at the real exchange rate with no hidden fees.',
                 link: 'Send money',
@@ -63,6 +71,6 @@ export default {
               }
            ],
        }
-   }
+   },
 }
 </script>

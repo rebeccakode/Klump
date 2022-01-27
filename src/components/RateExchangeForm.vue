@@ -1,15 +1,22 @@
 <template>
-    <v-form class="w-full"> 
-        <div class="flex flex-wrap space-y-4 md:space-y-0 items-center justify-center ml-8">
-            <div class="p-2">
+    <form class="w-full"> 
+       
+        <div class="flex items-center">
+            <div class="w-2/3">
                 <label class="block mb-1 absolute z-10 text-gray-600 px-4" for="formGridCode_name">You send</label>
-                <input value="1000" class="relative py-3 px-4 mt-2 text-lg font-bold focus:outline-none" type="text" id="formGridCode_name"/>
+                <input value="1000" class=" w-full relative p-6 mt-2 text-lg font-bold hover:border hover:border-primary focus:outline-none" type="text" id="formGridCode_name"/>
             </div>
 
-            <div class="font-bold">
-            
-            </div>
+            <div class="w-1/3">
+                <!-- <CountryList/> -->
+                <select class="w-full p-8 bg-darkblue text-white focus:outline-none hover:border hover:border-primary">
+                <option>GBP</option>
+                <option>1 </option>
+                <option>1 </option>
+                </select>
+           </div>
         </div>
+
         <div class="flex flex-col mx-24  mt-8">
             <span class="inline-flex">
                 <span class="bg-darkblue rounded-full text-white w-6 h-6 mb-4">
@@ -80,12 +87,14 @@
             <a class="bg-btnsucess py-3  rounded-sm ml-2 border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>
-    </v-form> 
+    </form> 
 </template>
 
 <script>
+// import CountryList from './CountryList.vue'
 
 export default {
+//   components: { CountryList },
     name: 'RateExchangeForm',
 }
 </script>
