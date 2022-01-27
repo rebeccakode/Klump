@@ -17,7 +17,7 @@
                 </svg>
              </button>
               <p class="text-primary text-lg font-semibold pl-6"> See how it works</p>
-             </span> -->
+             </span>
 
 
             <div class="lg:pt-12 py-8 lg:flex  block justify-start space-x-8">
