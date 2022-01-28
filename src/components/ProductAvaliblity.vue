@@ -4,7 +4,12 @@
           <h2 class="text-darkblue text-4xl font-semibold mb-6">Available for you in</h2>
           
           <div class="">
-            <!-- <CountryList/> -->
+            <select class="border w-3/4 font-bold text-xl"> 
+            <option value="Nigeria"> Nigeria </option>
+              </select>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /> -->
+                   <!-- </svg> -->
           </div>
         </div>  
 
@@ -19,7 +24,7 @@
                     <p class="my-4 text-body text-base"> {{product.description}}</p>
                     <a target="_blank" rel="" class="inline-flex text-primary font-bold" href="https://www.trustpilot.com/review/wise.com"> 
                      {{product.link}}
-                     <img :src="product.arrowIcon"  class="w-4 ml-2"/>
+                
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /> -->
                    </svg>
@@ -31,9 +36,8 @@
 </template>
 
 <script>
-// import CountryList from './CountryList.vue'
 export default {
-  // components: { CountryList },
+  
    name:'ProductAvaliblity',
    data() {
        return {
