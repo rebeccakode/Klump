@@ -61,7 +61,7 @@
 
 <script>
 export default {
-  name: "MenuDropdownContent",
+  name: "Transfer",
 };
 </script>
 

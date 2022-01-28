@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="text-center items-center w-100 pr-4">
+        <div class="text-center items-center w-100 pr-4 lg:py-0 py-8">
             <a class="bg-btnsucess p-3.5 wf-ull rounded-sm  border-btnsucess text-white font-bold block" href="/register?redirectUrl=%2Fsend%23%3Famount%3D1000%26sourceCurrency%3DGBP%26targetCurrency%3DNGN%26fixedTarget%3Dfalse%26guaranteedFixedTarget%3Dfalse%26paymentOptionType%3DREGULAR&amp;country=NG" target="_top">
              Get started</a>
         </div>

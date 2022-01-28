@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-32 px-16 py-12">
+  <div class="lg:px-32 lg:px-16 py-12  px-6">
     <h2 class="dark-blue-title text-center mt-2 font-extrabold colored-dot leading-one-height">Send money to 80 countries</h2>
     <p class="black-subtitle-text text-center font-medium mt-4">You can use money in your multi-currency account to send to any of the countries on Wise.</p>
 

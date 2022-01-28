@@ -122,7 +122,7 @@
 
 <script>
 export default {
-  name: "MenuDropdownCard"
+  name: "MultiCurrency"
 };
 </script>
 

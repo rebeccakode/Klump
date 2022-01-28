@@ -12,7 +12,7 @@
          <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
           <li>
            <a>
-               <MenuDropdownContent/>
+               <Transfer/>
           </a>
           </li>
         </ul>
@@ -30,7 +30,7 @@
             <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
             <li>
             <a>
-                <MenuDropdownCard/>
+                <MultiCurrency/>
             </a>
             </li>
             </ul>
@@ -59,16 +59,13 @@
         <span class="absolute -top-2 right-0 w-3 h-3 bg-white transform rotate-45 mt-1 mr-4"></span>
           <li>
            <a>
-             <DropdownLangTitle/>
+             <LangTitle/>
           </a>
           </li>
         </ul>
        </transition>
        
     </li>
-
-     
-     
       <li class="px-3 mt-2">
         <a href="/register" class="text-sm font-semibold  p-2 hover:text-primary text-white" > 
          Login 
@@ -86,11 +83,11 @@
 </template>
 
 <script>
-import DropdownLangTitle from './DropdownLangTitle.vue'
-import MenuDropdownCard from './MenuDropdownCard.vue'
-import MenuDropdownContent from './MenuDropdownContent.vue'
+import LangTitle from './LangTitle.vue'
+import MultiCurrency from './MultiCurrency.vue'
+import Transfer from './Transfer.vue'
 export default {
-  components: { MenuDropdownContent, MenuDropdownCard, DropdownLangTitle },
+  components: { Transfer, MultiCurrency, LangTitle },
     name: 'Navbar',
     data () {
         return {

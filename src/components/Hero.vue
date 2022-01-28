@@ -1,24 +1,26 @@
 <template>
   <div>
-     <div class="container lg:mx-12 mx-0 py-8 lg:px-12 px-4">
+     <div class="container mx-auto lg:py-8 lg:px-16 px-4">
          <section class="grid lg:grid-cols-4 grid-cols-2 gap-4">
           <div class="col-span-2 lg:mx-0 mx-6">
-              <h2 class="text-white leading-relaxed text-4xl font-bold py-3">
+            <div class="flex flex-col">
+               <h2 class="text-white leading-relaxed lg:order-1 order-2 text-4xl font-bold py-3">
                 The cheap, fast way to send money abroad.
               </h2>
-
-        
-             <span class="flex items-center my-16">
-              <button class="flex h-24 w-24">
-                <span class="animate-ping absolute flex h-24 w-24 rounded-full bg-primary opacity-75 transition duration-700 ease-in-out"></span>
-                <svg viewBox="0 0 109 109" class="text-primary relative w-24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="54.5" cy="54.5" r="53" fill="currentColor">
-                    </circle><path d="M72 54.6162L45.5758 69.8722L45.5758 39.3601L72 54.6162Z" fill="white"></path>
-                </svg>
-             </button>
-              <p class="text-primary text-lg font-semibold pl-6"> See how it works</p>
-             </span>
-
+            <div class="flex items-center justify-center lg:justify-start relative lg:order-2 order-1 lg:my-3 lg:py-8 my-6">
+              <div class="h-[4.5rem] w-[4.5rem] lg:h-[6.875rem] lg:w-[6.875rem] relative before:animate-spin-slow before:translate-x-2/4 before:translate-y-2/4 before:scale-100 before:opacity-60 before:absolute before:h-full before:w-full before:bg-accent before:rounded-full before:content-[''] before:right-1/2 before:bottom-1/2 before:bg-accent before:border-none">
+                <button type="button" aria-label="Play video" aria-expanded="false" class="h-full w-full text-accent rounded-full border-none overflow-hidden relative bg-[0 0]">
+                  <svg viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg" class="rounded-full">
+                    <circle cx="54.5" cy="54.5" r="53" fill="currentColor"></circle>
+                    <path d="M72 54.6162L45.5758 69.8722L45.5758 39.3601L72 54.6162Z" fill="white"></path>
+                  </svg>
+                </button>
+              </div>
+              <button type="button" class="text-accent hidden lg:block bg-transparent pt-3 pb-2.5 px-6 rounded-sm font-semibold min-h-[3rem] text-md"
+                      aria-label="Play video" aria-expanded="false">See how it works
+              </button>
+            </div>
+          </div>
 
             <div class="lg:pt-12 py-8 lg:flex  block justify-start space-x-8">
             <span>

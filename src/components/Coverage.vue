@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-32 py-12 px-16">
+  <div class="lg:px-32 py-12 lg:px-16 px-6">
     <p class="section-title">Coverage</p>
 
     <h2 class="dark-blue-title text-center mt-2 font-extrabold colored-dot leading-one-height">Get these local account details</h2>

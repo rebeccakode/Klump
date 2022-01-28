@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-32 px-16 py-12">
+  <div class="lg:px-32 lg:px-16 lg:py-12 px-6">
     <h2 class="dark-blue-title text-center mt-2 font-extrabold colored-dot leading-one-height">Hold and convert money</h2>
     <p class="black-subtitle-text text-center font-medium mt-4">You can hold and convert money in 54 currencies.
       It only takes a few seconds to open a new <br class="hidden lg:flex"> balance in the currency you need.</p>

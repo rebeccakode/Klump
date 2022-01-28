@@ -1,7 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}' ],
-  darkMode: false, // or 'media' or 'class'
+   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}' ],
   theme: {
       extend: {
         fontFamily: {
@@ -39,6 +38,8 @@ module.exports = {
         },
         animation: {
           'spin-slow': 'pulsing-ring 1800ms cubic-bezier(.2,.6,.35,1) infinite',
+           'arrow-right': ' transition: transform .25s cubic-bezier(0,.94,.62,1);',
+           'rotate': 'transform: rotate(90deg);',
         },
         keyframes: {
           'pulsing-ring': {
