@@ -1,7 +1,7 @@
 <template>
-     <section class="lg:mt-8 lg:py-6">
+     <section class="lg:mt-8 lg:pt-6">
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
-            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body lg:order-first order-last">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Moving and living abroad just got simpler<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Receive your salary, pension, and more.</h3>
                 <p class="text-justify my-3 text-base leading-7"> Relocate without the stress — and without the multiple bank accounts. Share your details with your
@@ -19,12 +19,12 @@
                 </p>
             </div>
         
-           <div class="use-case-bg1 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
+           <div class="use-case-bg1 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full lg:order-last order-first"></div>
         </div>
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
-              <div class="use-case-bg2 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
-            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
+              <div class="use-case-bg2 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full lg:order-last order-first"></div>
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body  lg:order-last order-first">
                 <h2 class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Shopping through overseas online stores<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Pay at the real exchange rate.</h3>
                 <p class="text-justify my-3 text-base leading-7"> Avoid sneaky bank exchange rate markups and high foreign transaction fees. 
@@ -45,7 +45,7 @@
         </div>
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
-            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body">
+            <div class="lg:p-6.25rem mx-6 lg:mx-0 p-4 leading-one-height text-body lg:order-first order-last">
                 <h2  class="leading-one-height lg:text-26rem text-4xl font-bold lg:my-6 subtitle"> Receive money from around the world<span class="text-primary font-bold rounded-full">.</span> </h2>
                 <h3 class="text-h3 text-darkbluetitle pt-4 pb-2 leading-md-height font-semibold"> Get paid like a local.</h3>
                 <p class="text-justify my-3 text-base leading-7"> UK account number, Euro IBAN, US routing number, and more. All in one account. Receive your salary, 
@@ -64,7 +64,7 @@
                 </p>
             </div>
 
-              <div class="use-case-bg3 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full"></div>
+              <div class="use-case-bg3 bg-cover bg-no-repeat bg-center bg-blend-multiply h-full w-full lg:order-last order-first"></div>
         </div>
 
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"> 
@@ -171,30 +171,37 @@ export default {
     background-image: url('../assets/images/abroad_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/abroad_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
+    min-height: 320px;
+  
     }
 
     .use-case-bg2{
     background-image: url('../assets/images/shopping.jpg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/shopping.jpg'),linear-gradient(#f2f5f7,#f2f5f7);
+    min-height: 320px;
+    
     }
 
     .use-case-bg3{
     background-image: url('../assets/images/receive_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/receive_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
+    min-height: 320px;
     }
 
     .use-case-bg4{
     background-image: url('../assets/images/property_section.jpeg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
-    background-image: url('../assets/images/property_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7)
+    background-image: url('../assets/images/property_section.jpeg'),linear-gradient(#f2f5f7,#f2f5f7);
+    min-height: 320px;
     }
 
     .use-case-bg5{
     background-image: url('../assets/images/customer_support.jpg'),
     -webkit-gradient(linear,left top,left bottom,from(#f2f5f7),to(#f2f5f7));
     background-image: url('../assets/images/customer_support.jpg'),linear-gradient(#f2f5f7,#f2f5f7);
+    min-height: 320px;
     }
    
 </style>
