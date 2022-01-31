@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
   <ul class="flex flex-wrap m-0 menu-item">
     <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block left-0 p-0">
       <a  class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
@@ -71,28 +71,21 @@
          Login 
           </a>
       </li> 
-
-        <li class="px-3 mt-2"><a href="/register" class="border p-3 rounded hover:bg-primary 
-        hover:text-white text-sm font-semibold border-primary p-2 text-primary" > 
-        Register 
-        </a>
-        </li>
-     
   </ul>
   </div>
 </template>
 
 <script>
-import LangTitle from './LangTitle.vue'
-import MultiCurrency from './MultiCurrency.vue'
-import Transfer from './Transfer.vue'
+import LangTitle from '../../components/Dropdown.vue/LangTitle.vue'
+import MultiCurrency from '../../components/Dropdown.vue/MultiCurrency.vue'
+import Transfer from '../../components/Dropdown.vue/Transfer.vue'
 export default {
   components: { Transfer, MultiCurrency, LangTitle },
     name: 'Navbar',
     data () {
         return {
-        transfer:   false,
-        en:   false,
+        transfer:false,
+        en:false,
         account: false,
     }
   },

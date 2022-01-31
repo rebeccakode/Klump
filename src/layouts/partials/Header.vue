@@ -3,7 +3,7 @@
 
 <div>
    <section class="bg-darkblue" v-if="alertOpen">
-      <div class="container lg:mx-12 mx-0 py-4 lg:px-12 px-2 flex flex-wrap lg:justify-between justify-around">
+      <div class="lg:mx-12 mx-0 py-4 lg:px-12 px-2 flex flex-wrap lg:justify-between justify-around">
         <div>
           <span class="text-yellow inline-flex">
               <svg width="16" height="16" fill="currentColor" focusable="false"><path d="M11.863 1.63a.52.52 0 01-.233.233l-1.342.671a.52.52 0 000 .932l1.342.67c.101.051.183.133.233.234l.671 1.342a.52.52 0 00.931 0l.672-1.342a.52.52 0 01.233-.233l1.342-.671a.52.52 0 000-.932l-1.342-.67a.52.52 0 01-.233-.234L13.466.288a.52.52 0 00-.931 0l-.672 1.342z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7.238 3.456a.825.825 0 00-1.476 0L3.993 6.993.456 8.762a.825.825 0 000 1.476l3.537 1.769 1.769 3.537a.825.825 0 001.476 0l1.769-3.537 3.537-1.769a.825.825 0 000-1.476L9.007 6.993 7.238 3.456zM5.347 7.978L6.5 5.67l1.153 2.307c.08.16.21.289.37.369L10.328 9.5l-2.307 1.153c-.16.08-.289.21-.369.37L6.5 13.328l-1.153-2.307a.825.825 0 00-.37-.369L2.672 9.5l2.307-1.153c.16-.08.289-.21.369-.37z"></path></svg>
@@ -22,7 +22,7 @@
       </div>
     </section>
 
- <div class="container lg:mx-12 mx-0 py-8 lg:px-12 px-4">
+ <div class="lg:mx-12 mx-0 py-8 lg:px-12 px-4">
   <div class="max-w-6xl">
         <div class="flex justify-between">
             <div class="flex space-x-7">
@@ -38,52 +38,82 @@
                    </div>
                 </div>
             </div>
-            <div class="hidden md:flex items-center space-x-3 ">
+
+            <div class="hidden md:flex items-center pl-[6.25rem]">
                 <Navbar/> 
             </div>
-            <div class="md:hidden flex items-center">
-                <button class="outline-none mobile-menu-button">
-                <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
-                    x-show="!showMenu"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+
+            <div class="mt-4">
+                <a href="/register" class="border p-3 rounded hover:bg-primary 
+                hover:text-white text-sm font-semibold border-primary p-2 text-primary" > 
+                Register 
+               </a>
+            </div>
+            
+            <div class="md:hidden flex items-center order-first" @click="isOpen = !isOpen" >
+            <div>
+              <div  class="p-5">
+                  <div v-if="isOpen">
+                    <button class="outline-none absolute right-0 z-10 top-4">
+                      <svg width="24" height="24" fill="currentColor" focusable="false">
+                        <path d="M12 13.414l7.293 7.293 1.414-1.414L13.414 12l7.293-7.293-1.414-1.414L12 10.586 4.707 3.293 3.293 4.707 10.586 12l-7.293 7.293 1.414 1.414L12 13.414z"></path></svg>
+                    </button>
+                  </div>
+                  <div v-else>
+                      <button class="outline-none mobile-menu-button" >
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                     
+                      </button>
+                  </div>
+                </div>
+                <div class="max-w-7xl mx-auto order-first">
+                  <transition name="slide">
+                    <div v-if="isOpen">
+                      <div class="bg-darkblue absolute w-full p-6">
+                        sidebar</div>
+                    </div>
+                  </transition>
+                </div>
+
+             </div>
             </div>
         </div>
     </div>
-    <!-- mobile menu -->
+    <!-- mobile menu
     <div class="hidden mobile-menu">
         <ul class="">
              <Navbar/> 
         </ul>
-    </div>
+    </div> -->
  </div> 
  </div>
 </template>
 
 <script>
-import Navbar from '../../components/Dropdown.vue/Navbar.vue';
+import Navbar from './Navbar.vue';
 export default {
   components: { 
-   Navbar 
+   Navbar ,
    },
   name: 'Header',
   data() {
    return {
       alertOpen: true,
+      isOpen: false,
     }
   },
   methods: {
     closeAlert: function(){
       this.alertOpen = false;
-    }
+    },
   }
 }
 </script>

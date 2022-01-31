@@ -1,7 +1,7 @@
 <template>
   <div class="py-8 lg:py-14 w-11/12 lg:w-8/12 mx-auto">
-    <p class="body text-center font-semibold">Frequently asked questions</p>
-    <h2 class="subtitle text-center mt-2 font-extrabold leading-one-height">Let's answer some of your questions<span class="text-primary text-4xl">.</span></h2>
+    <p class=" text-center text-body font-semibold">Frequently asked questions</p>
+    <h2 class="dark-blue-title text-center mt-2 font-extrabold leading-one-height">Let's answer some of your questions<span class="text-primary text-6xl">.</span></h2>
 
     <div class="mt-8">
       <Accordion title="What is a multi-currency account and how does it work?">
@@ -18,9 +18,9 @@
           <a href="#" target="_blank">Wise debit card</a>.
           Find out if the Wise card is available in your country.
         </p>
-        <a target="_blank" rel="noopener noreferrer" class="hover:animate-arrow-right flex items-center" href="#">
+        <a target="_blank" rel="noopener noreferrer" class="hover:text-sky-700 flex items-center" href="#">
           Learn more about the multi-currency account in this video
-          <svg class="animate-rotate" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
+          <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
             <path fill-rule="evenodd" d="M4.9995 2.0865L0.0635004 6.7645L1.2745 7.9125L4.9995 4.3835L8.7245 7.9135L9.9355 6.7645L4.9995 2.0865Z"></path></svg>
         </a>
       </Accordion>
@@ -35,9 +35,9 @@
             <li class="blue-bold-text"><b>You won’t earn interest.</b></li>
           </ul>
 
-        <a target="_blank" rel="noopener noreferrer" class="hover:animate-arrow-right flex items-center mt-5" href="#">
+        <a target="_blank" rel="noopener noreferrer" class="link-with-arrow-right flex items-center mt-5" href="#">
           Read more about the benefits of a multi-currency account
-          <svg class="rotate" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
+          <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
             <path fill-rule="evenodd" d="M4.9995 2.0865L0.0635004 6.7645L1.2745 7.9125L4.9995 4.3835L8.7245 7.9135L9.9355 6.7645L4.9995 2.0865Z"></path></svg>
         </a>
       </Accordion>
@@ -48,18 +48,18 @@
         </p>
         <p>You can convert money between any of the currencies in your account — always with the real exchange rate. We’ll charge a low conversion fee to do this.
         </p>
-        <a target="_blank" rel="noopener noreferrer" class="hover:text-primary hover:animate-arrow-right flex items-center mt-5" href="#">
+        <a target="_blank" rel="noopener noreferrer" class="link-with-arrow-right flex items-center mt-5" href="#">
           Find out more about which currencies are available
-          <svg class="block rotate text-primary" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
+          <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
             <path fill-rule="evenodd" d="M4.9995 2.0865L0.0635004 6.7645L1.2745 7.9125L4.9995 4.3835L8.7245 7.9135L9.9355 6.7645L4.9995 2.0865Z"></path></svg>
         </a>
       </Accordion>
 
       <Accordion title="What is a multi-currency card?">
         <p>The Wise debit card lets you spend money around the world with low conversion fees and zero transaction fees. It’s currently available for multi-currency account-holder residents in the UK, US, Australia, New Zealand, Singapore, Malaysia, Japan, Switzerland and EEA.</p>
-        <a target="_blank" rel="noopener noreferrer" class="text-primary hover:animate-arrow-right font-semibold flex items-center mt-5" href="#">
+        <a target="_blank" rel="noopener noreferrer" class="text-primary font-semibold flex items-center mt-5" href="#">
           Here are some tips to help you get started
-          <svg class="rotate" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
+          <svg class="arrow-right" width="10" height="10" viewBox="0 0 10 10" fill="#00b9ff" focusable="false">
             <path fill-rule="evenodd" d="M4.9995 2.0865L0.0635004 6.7645L1.2745 7.9125L4.9995 4.3835L8.7245 7.9135L9.9355 6.7645L4.9995 2.0865Z"></path></svg>
         </a>
       </Accordion>
@@ -80,3 +80,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+
+.arrow-right {
+  transform: rotate(90deg);
+  margin-left: 8px;
+}
+.link-with-arrow-right:hover .arrow-right {
+  display: inline-block;
+  color: #00a4df;
+  transition: transform .25s cubic-bezier(0,.94,.62,1);
+}
+</style>

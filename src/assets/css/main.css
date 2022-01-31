@@ -7,53 +7,81 @@
 @layer components {
     .hero__bg {
         background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI2MjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDBoMTQ0MHY2MjFIMFYweiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPjxtYXNrIGlkPSJhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI2MjEiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMCAwaDE0NDB2NjIxSDBWMHoiIGZpbGw9IiNmZmYiLz48L21hc2s+PGcgbWFzaz0idXJsKCNhKSI+PHBhdGggb3BhY2l0eT0iLjMiIGZpbGw9IiMyNTNBNjkiIGZpbGwtb3BhY2l0eT0iLjUiIGQ9Ik0tNjE2IDExNjkuNzJMMjQwLjAzNS03OTkuMDI1bDc3Ny42MTMgMzM4LjExNy04NTYuMDM0IDE5NjguNzQ0eiIvPjwvZz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI0OTkiIHkxPSIyNy40NzUiIHgyPSI0NDgiIHkyPSI4MDQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4zMTQiIHN0b3AtY29sb3I9IiMzQzUxN0IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0QTVGQzAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @apply bg-center bg-cover bg-no-repeat;
     }
 
     .subtitle {
         @apply text-17rem lg:text-26rem;
-        color: #37517e;
+        /* color: #37517e; */
       }
 
-    .usercase-bg{
-        background: linear-gradient(252.32deg,#485dc7 0%,#37517e 100%),linear-gradient(0deg,#475cc7,#475cc7);
-    }
     .circle{
         position: relative;
         width: 58px;
         height: 58px;
     }
-    .faq-section {
-        background-color: #f2f5f7;
-      }
-      .colored-dot:after {
-        content: ".";
-        color: #00b9ff;
-      }
-      .send-money-to-countries-section {
-        background: white;
-      }
-      .hold-and-convert-money {
-        background: white;
-      }
+
+    .bg-usecase{
+     background: linear-gradient(252.32deg,#485dc7 0%, #37517e 100%),
+     linear-gradient(0deg,#475cc7,#475cc7);
+    }
+
       .dark-blue-title {
-        @apply text-17rem lg:text-26rem font-extrabold;
-        color: #37517e;
+        @apply text-17rem lg:text-26rem text-darkbluetitle font-extrabold;
+        /* color: #37517e; */
       }
       .black-subtitle-text {
-        color: #5d7079;
+        /* color: #5d7079; */
         letter-spacing: .016em;
         @apply lg:max-w-3xl font-medium mx-auto;
       }
       .section-title {
-        color: #5d7079;
         @apply text-center font-semibold mb-2;
       }
+      .bg-section-img {
+        @apply bg-cover bg-center bg-no-repeat w-full h-80 lg:h-full
+    }
 
-     /* opacity: .6; */ 
-    /* -webkit-transform: translate(50%,50%) scale(1); */
-    /* transform: translate(50%,50%) scale(1); */
+  }
+
+
+
+
+@layer base {
+  @font-face {
+      font-family: "Averta";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      unicode-range: U+000-5FF;
+      src: local("Averta"), url("/fonts/averta/TW-Averta-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+      font-family: "Averta";
+      font-weight: 600;
+      unicode-range: U+000-5FF;
+      src: local("Averta"), url("/fonts/averta/TW-Averta-Semibold.woff2") format("woff2");
+  }
+
+  @font-face {
+      font-family: "Averta";
+      font-weight: 700;
+      unicode-range: U+000-5FF;
+      src: local("Averta"), url("/fonts/averta/TW-Averta-Bold.woff2") format("woff2");
+  }
+
+  ol, ul {
+      @apply mx-6
+  }
+
+  h1, h2, h4,
+  .h1, .h2, .h4 {
+      @apply text-darkbluetitle font-semibold m-0 tracking-normal
+  }
+
+  p {
+      @apply text-secondary
+  }
 }
 

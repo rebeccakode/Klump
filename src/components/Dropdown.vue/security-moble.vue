@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-sm mt-2 accordion-border border border-gray-200 cursor-pointer bg-white">
-    <div v-on:click="isOpen = !isOpen" class="text-lg leading-md-height text-darkbluetitle font-semibold flex justify-between p-6 items-start">
-      {{ title }} 
+    <div v-on:click="isOpen = !isOpen" class="text-base leading-md-height text-darkbluetitle font-semibold flex justify-between p-6 items-start">
+       {{ icon }} {{ title }} 
       <span class="accordion-icon" :class="isOpen ? 'accordion-icon-transform-up' : 'bg-transparent'">
         <svg width="16" height="16" fill="#00b9ff" focusable="false">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4l-6.6 6.653L2.537 11.8 8 6.293l5.463 5.507 1.137-1.147L8 4z"></path>
@@ -25,6 +25,7 @@ export default {
   name: 'Accordion',
   props: {
     title: String,
+    icon:String,
   }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <div class="lg:px-32 py-12 lg:px-16 px-6">
+  <div class="container mx-auto py-12">
     <p class="section-title">Coverage</p>
 
-    <h2 class="dark-blue-title text-center mt-2 font-extrabold colored-dot leading-one-height">Get these local account details</h2>
+    <h2 class="dark-blue-title text-center mt-2 font-extrabold colored-dot leading-one-height">Get these local account details<span class="text-primary text-6xl">.</span></h2>
     <p class="black-subtitle-text text-center font-medium mt-4">These are the account details you can share with others to receive money.
       Anyone can use these <br class="hidden lg:flex">to pay you just like they'd pay a local.
 

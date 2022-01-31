@@ -7,19 +7,54 @@ module.exports = {
           sans: ['Averta', 'Avenir W02', 'Avenir', ...defaultTheme.fontFamily.sans],
           serif: ['Averta', ...defaultTheme.fontFamily.serif],
         },
-        
+
+        backgroundImage: {
+          'bg-abroad': "url('/images/abroad_section.jpeg')",
+          'shopping': "url('/images/shopping.jpg')",
+          'receive_section': "url('/images/receive_section.jpeg')",
+          'property_section': "url('/images/property_section.jpeg')",
+          'customer_support': "url('/images/customer_support.jpg')",
+          },
+
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+              sm: '1.5rem',
+              md: '1.5rem',
+              lg: '2rem',
+              xl: '2rem',
+              '2xl': '2rem',
+            },
+            screens: {
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              '2xl': '1400px',
+            }
+          },
+
+          margin:{
+            'xl':'3.5rem',
+          },
+
+          gap: {
+            '16': '6rem',
+          },
+         
+          width: {
+            '12': '3rem',
+          },
         colors: {
             primary: '#00b9ff',
             secondary: '#5d7079',
-            accent: '#00b9ff',
             neutral: '#f2f5f7',
-            tertiary: '#FAD6A0',
             darkblue: '#253655',
             darkbluetitle: '#37517e',
             yellow: '#ffa600',
             ashgray: '#d3d5d8', 
             btnsucess: '#2ed06e',
-            body: '#5d7079',
         },
        
         fontSize: {
@@ -27,9 +62,9 @@ module.exports = {
           '26rem': '2.625rem',
           'h3'   : '1.375rem',
         },
-
         padding: {
           '6.25rem': '6.25rem',
+          'pl' : '6rem',
         },
 
         lineHeight: {
@@ -56,7 +91,7 @@ module.exports = {
   plugins: [
     require("tailwindcss"),
     require("autoprefixer"), 
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
   ],
 }
 

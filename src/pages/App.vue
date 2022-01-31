@@ -16,7 +16,7 @@
        
       <ConvertMoney/>        
       <SendMoney/>
-      <section class="faq-section">
+      <section class="bg-neutral">
       <FAQs />
     </section>
 
@@ -34,7 +34,6 @@ import Footer from '../layouts/partials/Footer.vue'
 import Header from '../layouts/partials/Header.vue'
 import SendMoney from '../components/SendMoney.vue'
 import Security from '../components/Security.vue'
-
 import ConvertMoney from '../components/ConvertMoney.vue'
 import Coverage from '../components/Coverage.vue'
 
