@@ -21,11 +21,15 @@
         height: 58px;
     }
 
+    .pad-strip{
+        width: 454px;
+        @apply top-43rem;
+    }
+
     .bg-usecase{
      background: linear-gradient(252.32deg,#485dc7 0%, #37517e 100%),
      linear-gradient(0deg,#475cc7,#475cc7);
     }
-
       .dark-blue-title {
         @apply text-17rem lg:text-26rem text-darkbluetitle font-extrabold;
         /* color: #37517e; */

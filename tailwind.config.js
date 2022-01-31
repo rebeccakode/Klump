@@ -62,9 +62,14 @@ module.exports = {
           '26rem': '2.625rem',
           'h3'   : '1.375rem',
         },
+
         padding: {
           '6.25rem': '6.25rem',
           'pl' : '6rem',
+        },
+
+        inset: {
+          '43rem': '43rem',
         },
 
         lineHeight: {
