@@ -1,87 +1,75 @@
-<div class="calculatory">
-    <div data-tracking-id="calculator">
-        <div class="form-group form-group-lg m-b-0"><label class="control-label pl-3">You send</label>
-            <div class="send-input input-group input-group-lg">
-                <input type="text" id="calculatory-source" value="1,000"
-                    autocomplete="off" class="input-control form-control input-base col-xs-8"> <span
-                    class="input-group-btn amount-currency-select-btn input-btn col-xs-4">
-                    <div class="btn-group btn-block dropdown ">
-                        <button type="button" aria-expanded="false"
-                            class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle"><span
-                                ><i class="currency-flag currency-flag-gbp hidden-xs"></i>GBP</span>
-                            <span class="caret"></span></button>
-                    </div>
-                </span>
-            </div>
-        </div>
-        <ul
-            class="cost cost-top cost-bottom calculatory-breakdown cost-inverse calculatory-breakdown--inverse calculatory-breakdown--detailed">
-            <li class="d-flex"><span class="cost-icon calculatory-breakdown__icon">–</span><span
-                    class="calculatory-breakdown-item__left"><strong>5.73 GBP</strong></span><span
-                    class="calculatory-breakdown-item__right d-flex"><span data-tracking-id="calculator-payment-select"
-                        class="mr-1">
-                        <div class="btn-block dropdown"><button type="button" aria-expanded="false"
-                                class="btn btn-input btn-input-inverse btn-addon btn-sm dropdown-toggle"><span
-                                    >Low cost transfer</span>
-                                <span class="caret"></span>
-                            </button>
-                        </div>
-                    </span>fee</span>
-            </li>
-            <li ><span class="calculatory-breakdown-item__left">994.27 GBP</span><span
-                    class="calculatory-breakdown-item__right">Amount we’ll convert</span></li>
-            <li ><span class="cost-icon calculatory-breakdown__icon">×</span><span
-                    class="calculatory-breakdown-item__left"><a role="button" tabindex="0" class="mr-2"><span
-                            class="calculatory-breakdown-rate__value">442.756</span>
-                        <span class="calculatory-breakdown-rate-graph-icon"><svg viewBox="0 0 11 8" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" id="el_oE6GCMIHr">
-                                <defs >
-                                    <linearGradient x1="-12.7227783%" y1="100%" x2="125.65918%" y2="100%"
-                                        id="linearGradient-1">
-                                        <stop stop-color="#00B9FE" offset="0%"></stop>
-                                        <stop stop-color="#2ED06F" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <g id="el_jjL7heWyEy" fill-rule="evenodd">
-                                    <g id="el_7RoaOX2MBf">
-                                        <path
-                                            d="M6.12919677,0 C6.00679983,0 5.96090098,0.137696558 6.03739907,0.229494263 L7.16957076,1.36166596 L8.63833404,2.83042924 L9.77050574,3.96260093 C9.84700382,4.03909902 10,3.99320017 10,3.87080323 L10,0.137696558 C10,0.06119847 9.93880153,0 9.86230344,0 L6.12919677,0 Z"
-                                            id="el_xnVmcmD2Ct"></path>
-                                        <polyline id="el_wWgIoPQu5o" points="0 6 3 3 5 5 8 2"></polyline>
-                                    </g>
-                                </g>
-                            </svg></span>
-                    </a>
-                </span><span class="calculatory-breakdown-item__right"><span
-                        data-tracking-id="calculator-fixed-rate-tooltip" data-toggle="popover" role="button"
-                        tabindex="0">Guaranteed rate</span> <span style="white-space: nowrap;"><span
-                            >(</span>24
-                        <span > hrs)</span>
-                    </span>
-                </span>
-            </li>
-        </ul>
-        <div class="form-group form-group-lg m-b-0">
-            <div class="send-input input-group input-group-lg"><input type="text" id="calculatory-target"
-                    value="440,219.01" autocomplete="off" class="input-control"><span
-                    class="input-group-addon input-lg"><span aria-describedby="3vzu7i" class="tooltip-container">
-                        <div role="tooltip" id="3vzu7i" class="tooltip fade top " style="top: -122px; left: 169px;">
-                            <div class="tooltip-arrow"></div>
-                            <div class="tooltip-inner">If you need more than 24 hours to pay, click the lock to make
-                                sure your recipient gets exactly 440,219.01 NGN.</div>
-                        </div> <a class="calculatory__amount-lock text-muted"><i class="icon icon-unlock"></i></a>
-                    </span></span>
-                <span class="input-group-btn amount-currency-select-btn">
-                    <div class="btn-group btn-block dropdown"><button type="button" aria-expanded="false"
-                            class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle"><span
-                                ><i class="currency-flag currency-flag-ngn hidden-xs"></i>NGN</span><span
-                                class="caret"></span></button></div>
-                </span>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
-</span></button></div></span></div>
-</div>
-</div>
-</div>
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 

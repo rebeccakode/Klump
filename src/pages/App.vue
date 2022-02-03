@@ -1,8 +1,10 @@
 <template>
   <div id="app">
    <div class="hero__bg">
+   <div class="">
       <Header/>
       <Hero/>
+  </div>
    </div>
 
      <div class="py-8 mt-12">

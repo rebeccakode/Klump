@@ -43,7 +43,16 @@
         @apply text-center font-semibold mb-2;
       }
       .bg-section-img {
-        @apply bg-cover bg-center bg-no-repeat w-full h-80 lg:h-full
+        @apply bg-cover bg-center bg-no-repeat w-full h-80 lg:h-full;
+    }
+
+    .visible-bg{
+      visibility: visible;
+      @apply bg-darkbluetitle;
+    }
+
+    .ml-5rem{
+      margin-left: -5rem;
     }
 
   }

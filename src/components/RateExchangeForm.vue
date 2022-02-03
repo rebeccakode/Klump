@@ -1,9 +1,9 @@
 <template>
-  <form class="w-full lg:xl-[3.5rem]">
-    <div class="flex items-center">
-      <div class="w-full">
+  <form class="w-full lg:xl-[3.5rem] relative lg:left-[6rem]">
+    <div class="flex items-center -mt-2">
+      <div class="">
         <label
-          class="block mb-1 absolute ml-2 z-50 text-gray-600 mt-3 text-sm px-3"
+          class="block mb-1 absolute ml-2 z-50 text-gray-600 text-sm mt-3 px-3"
           for="formGridCode_name"
           >You send</label
         >
@@ -43,7 +43,7 @@
               bg-darkblue
               hover:text-primary
               font-semibold
-              hover:border hover:border-gray-200
+              hover:border hover:border-ashgray
             "
            >
             <CountryFlag country="gb" size="normal" class="-mt-1" />
@@ -65,7 +65,7 @@
     </div>
     <div class="flex flex-col sequence my-6">
       <li class="list-none"> 
-        <span class="inline-flex z-50 mt-2 relative">
+        <span class="inline-flex z-50 relative">
             <span class="bg-darkblue rounded-full text-white w-6 h-6 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -103,7 +103,7 @@
       </li>
 
       <li class="list-none">
-        <span class="inline-flex py-2 mt-2  z-50 relative text-ashgray">
+        <span class="inline-flex z-50 relative text-ashgray">
             <span class="bg-darkblue rounded-full text-white w-6 h-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -116,7 +116,7 @@
         </span>
       </li>
      <li class="list-none">
-        <span class="inline-flex pt-3 mt-2 z-50 relative">
+        <span class="inline-flex pt-2 mt-2 z-50 relative">
           <span class="bg-darkblue rounded-full text-white w-6 h-6">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -145,10 +145,10 @@
     
     </div>
 
-    <div class="flex items-center">
-      <div class="w-full">
+    <div class="flex items-center -mt-2">
+      <div class="">
         <label
-          class="block mb-1 absolute ml-2 z-10 text-gray-600 mt-3 text-sm px-3"
+          class="block mb-1 absolute ml-2 z-10 text-gray-600 mt-1 text-sm px-3"
           for="formGridCode_name"
           >You send</label
         >
@@ -185,7 +185,7 @@
               bg-darkblue
               hover:text-primary
               font-semibold
-              hover:border hover:border-gray-200
+              hover:border hover:border-ashgray
             "
           >
             <CountryFlag country="eu" size="normal" class="-mt-1" />
@@ -209,7 +209,7 @@
     <div
       class="
         flex flex-wrap
-        justify-center
+        justify-arouns
         space-y-4
         md:space-y-0
         text-white
@@ -217,24 +217,23 @@
       "
     >
       <div class="text-center text-base border-r-2 border-darkblue px-4">
-        <p class="text-white">You could save vs banks</p>
+        <p class="text-white leading-8">You could save vs banks</p>
         <strong> 43.95 GBP </strong>
       </div>
 
       <div class="text-center text-base pl-6">
-        <p class="text-white">
+        <p class="text-white leading-8">
           Should arrive <br />
           <strong> 40 minutes </strong>
         </p>
       </div>
     </div>
 
-    <div class="text-center items-center w-100 lg:py-0 py-8">
+    <div class="text-center items-center lg:w-[26.25rem] lg:py-0 py-8">
       <a
         class="
           bg-btnsucess
           p-3.5
-          wf-ull
           rounded-sm
           border-btnsucess
           text-white
@@ -290,7 +289,7 @@ export default {
    content: "";
     position: absolute;
     width: 2px;
-    height: 50%;
+    height: 45%;
     border: 0 solid;
     border-color: inherit;
     outline: 0;

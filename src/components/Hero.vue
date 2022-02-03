@@ -1,7 +1,7 @@
 <template>
   <div>
      <div class="container mx-auto lg:py-8">
-         <section class="grid lg:grid-cols-2 grid-cols-1 lg:gap-[6rem]">
+         <section class="grid lg:grid-cols-2 grid-cols-1 lg:gap-[6rem] container mx-auto">
           <div class="lg:px-0 px-4">
             <div class="flex flex-col">
                <h2 class="text-white lg:leading-relaxed lg:text-left text-center lg:order-1 order-2 text-4xl font-bold py-3">
@@ -32,7 +32,7 @@
               </svg>
               </a>
             </span>
-            <span class="lg:pl-24 pl-4">
+            <span class="lg:pl-16 pl-4">
               <p class="text-white text-lg font-bold">FCA regulated</p>
               <a target="_blank" rel="" class="inline-flex text-primary font-bold" href="https://www.trustpilot.com/review/wise.com"> 
                 Learn more
@@ -44,7 +44,7 @@
           </div>
           </div>
 
-           <div class="relative lg:ml-12">
+           <div class="relative">
                 <RateExchangeForm/>
           </div>
        </section>

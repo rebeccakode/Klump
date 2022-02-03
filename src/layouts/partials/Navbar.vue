@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" style="z-index:9999">
   <ul class="flex flex-wrap m-0 menu-item">
     <li @mouseover="transfer = true" @mouseleave="transfer = false" class="relative block left-0 p-0">
       <a  class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
@@ -21,7 +21,7 @@
 
     <li @mouseover="account = true" @mouseleave="account = false" class="relative block ">
       <a class="relative flex items-center focus:outline-none pl-5 pr-3 text-sm py-2 hover:text-primary text-white font-semibold" >
-               Multi-currency-account
+               Multi-currency account
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-current hover:text-primary text-white"><path
                   d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
       </a>
@@ -71,6 +71,7 @@
          Login 
           </a>
       </li> 
+
   </ul>
   </div>
 </template>

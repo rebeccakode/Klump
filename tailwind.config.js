@@ -45,6 +45,7 @@ module.exports = {
          
           width: {
             '12': '3rem',
+            '420': '26.25rem',
           },
         colors: {
             primary: '#00b9ff',
@@ -66,10 +67,15 @@ module.exports = {
         padding: {
           '6.25rem': '6.25rem',
           'pl' : '6rem',
+          '16rem': '16rem'
+
         },
 
         inset: {
-          '43rem': '43rem',
+           '43rem': '43rem',
+           '3rem' : '3rem',
+           '6rem' : '6rem',
+            '0': '0'
         },
 
         lineHeight: {

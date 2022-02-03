@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="mx-auto">
         <div class="flex flex-wrap items-center justify-center">
           <h2 class="text-darkbluetitle text-4xl font-semibold mb-6">Available for you in</h2>
           
@@ -16,7 +16,7 @@
         </div>  
 
 
-       <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4 mt-8 py-4">
+       <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4 mt-8 py-4 px-16">
           <div v-for="product in productAvaliblity" :key="product"> 
                 <div class="flex flex-col justify-between">
                     <img :src="product.image" />
